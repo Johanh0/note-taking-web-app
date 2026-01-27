@@ -1,3 +1,11 @@
-<section class="login">
-    
+<section>
+  <div class="login">
+    <div>
+      @if (themeService.theme() == 'light') {
+        <img ngSrc="images/logo.svg" alt="" width="95" height="28" />
+      } @else if (themeService.theme() == 'dark') {
+        <img ngSrc="images/logo-dark.svg" alt="" width="95" height="28" />
+      }
+    </div>
+  </div>
 </section>
