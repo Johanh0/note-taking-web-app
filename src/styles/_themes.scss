@@ -1,13 +1,29 @@
-@use './fonts' as *;
+@use 'sass:map';
+
+:root[data-theme='light'] {
+  --background: #f3f5f8;
+  --foreground: #e0e4ea;
+  --text: #0e121b;
+  --text-foreground: #525866;
+  --outline: #cacfd8;
+}
+
+:root[data-theme='dark'] {
+  --background: #2b303b;
+  --foreground: #0e121b;
+  --text: #fff;
+  --text-foreground: #cacfd8;
+  --outline: #525866;
+}
 
 :root[data-font='inter'] {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 :root[data-font='noto-serif'] {
-    font-family: 'Noto-Serif', sans-serif;
+  font-family: 'Noto-Serif', sans-serif;
 }
 
 :root[data-font='code-pro'] {
-    font-family: 'Code-Pro', sans-serif;
+  font-family: 'Code-Pro', sans-serif;
 }

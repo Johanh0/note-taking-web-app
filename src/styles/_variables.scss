@@ -1,5 +1,3 @@
-@use './mixins' as *;
-
 $colors: (
     'neutral-950': #0E121B,
     'neutral-900': #191B25,
@@ -20,6 +18,15 @@ $colors: (
     'green-100': #D1FBE9,
     'red-500': #FB3748,
     'red-100': #FFD5D8
+);
+
+$theme-colors: (
+    'primary': #335cff,
+    'background': var(--background),
+    'foreground': var(--foreground),
+    'text': var(--text),
+    'text-foregound': var(--text-foreground),
+    'outline': var(--outline),
 );
 
 $spacing: (
