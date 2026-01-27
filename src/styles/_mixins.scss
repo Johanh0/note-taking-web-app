@@ -1,3 +1,18 @@
+@use "sass:map";
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == 'mobile' {
+        @media (max-width: 375px) { @content; }
+    }
+    @else if $breakpoint == 'tablet' {
+        @media (max-width: 704px) { @content; }
+    }
+    @else if $breakpoint == 'desktop' {
+        @media (max-width: 1200px) { @content; }
+    }
+}
+
+
 @mixin font($font-size, $font-weight, $line-height, $letter-spacing) {
     font-size: $font-size;
     font-weight: $font-weight;
