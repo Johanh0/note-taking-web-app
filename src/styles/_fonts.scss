@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../app/assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto-Serif';
+  src: url('../app/assets/fonts/noto-serif/NotoSerif-VariableFont_wdth\,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Code-Pro';
+  src: url('../app/assets/fonts/source-code-pro/SourceCodePro-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}

@@ -1,0 +1,13 @@
+@use './fonts' as *;
+
+:root[data-font='inter'] {
+    font-family: 'Inter', sans-serif;
+}
+
+:root[data-font='noto-serif'] {
+    font-family: 'Noto-Serif', sans-serif;
+}
+
+:root[data-font='code-pro'] {
+    font-family: 'Code-Pro', sans-serif;
+}
