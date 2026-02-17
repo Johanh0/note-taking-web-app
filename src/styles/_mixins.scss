@@ -1,21 +1,85 @@
-@use "sass:map";
+@use 'sass:map';
 
+// Responsive
 @mixin responsive($breakpoint) {
-    @if $breakpoint == 'mobile' {
-        @media (max-width: 375px) { @content; }
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 375px) {
+      @content;
     }
-    @else if $breakpoint == 'tablet' {
-        @media (max-width: 704px) { @content; }
+  } @else if $breakpoint == 'tablet' {
+    @media (max-width: 704px) {
+      @content;
     }
-    @else if $breakpoint == 'desktop' {
-        @media (max-width: 1200px) { @content; }
+  } @else if $breakpoint == 'desktop' {
+    @media (max-width: 1200px) {
+      @content;
     }
+  }
 }
 
-
+// Text
 @mixin font($font-size, $font-weight, $line-height, $letter-spacing) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-1 {
+  @include font(2.4rem, 'bolder', 120%, -0.5px);
+}
+
+@mixin text-preset-2 {
+  @include font(2rem, 'bolder', 120%, -0.5px);
+}
+
+@mixin text-preset-3 {
+  @include font(1.5rem, 'bold', 120%, -0.3px);
+}
+
+@mixin text-preset-4 {
+  @include font(1.4rem, 'medium', 120%, -0.2px);
+}
+
+@mixin text-preset-5 {
+  @include font(1.4rem, 'normal', 120%, -0.2px);
+}
+
+@mixin text-preset-6 {
+  @include font(1.2rem, 'normal', 120%, -0.2px);
+}
+
+@mixin input-group {
+  display: flex;
+  flex-direction: column;
+//   gap: map.get($map: $spacing, $key: '075');
+  width: 100%;
+}
+
+@mixin input-label {
+  @include text-preset-4;
+}
+
+@mixin input-container {
+    display: flex;
+    align-items: center;
+    gap: map.get($map: $spacing, $key: '100');
+    padding: map.get($map: $spacing, $key: '150') map.get($map: $spacing, $key: '200');
+}
+
+@mixin input {
+    @include text-preset-5;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+}
+
+@mixin input-hint-container {
+    display: flex;
+    align-items: center;
+    // gap: map.get($map: $spacing, $key: '100');
+}
+
+@mixin input-hint {
+
 }

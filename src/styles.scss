@@ -14,25 +14,45 @@ body {
 }
 
 h1 {
-    @include font(2.4rem, 'bolder', 120%, -0.5px);
+    @include text-preset-1;
 }
 
 h2 {
-    @include font(2rem, 'bolder', 120%, -0.5px);
+    @include text-preset-2;
 }
 
 h3 {
-    @include font(1.5rem, 'bold', 120%, -0.3px);
+    @include text-preset-3;
 }
 
 h4 {
-    @include font(1.4rem, 'medium', 120%, -0.2px);
+    @include text-preset-4;
 }
 
 h5 {
-    @include font(1.4rem, 'normal', 120%, -0.2px);
+    @include text-preset-5;
 }
 
 h6 {
-    @include font(1.2rem, 'normal', 120%, -0.2px)
+    @include text-preset-6;
+}
+
+.input-group {
+    @include input-group;
+}
+
+.input-label {
+    @include input-label;
+}
+
+.input {
+    @include input;
+}
+
+.input-hint-container {
+    @include input-hint-container;
+}
+
+.input-hint {
+    @include input-hint;
 }
