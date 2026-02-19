@@ -1,20 +1,66 @@
 <section>
-  <div class="login">
+  <div class="login card-form">
     <div class="login__logo">
       @if (themeService.theme() == 'light') {
-        <img ngSrc="images/logo.svg" alt="" width="95" height="28" />
+        <img ngSrc="images/logo.svg" alt="logo" width="95" height="28" />
       } @else if (themeService.theme() == 'dark') {
-        <img ngSrc="images/logo-dark.svg" alt="" width="95" height="28" />
+        <img ngSrc="images/logo-dark.svg" alt="logo" width="95" height="28" />
       }
     </div>
 
     <div class="login__title">
-        <h1>Welcome to Note</h1>
-        <h5>Please log in to continue</h5>
+      <h1>Welcome to Note</h1>
+      <h5>Please log in to continue</h5>
     </div>
 
     <div class="login__form">
-      
+      <form action="">
+        <div class="input-group">
+          <label for="" class="input-label">Email Address</label>
+          <div class="input-container">
+            <input
+              type="text"
+              class="input"
+              [formField]="loginForm.email"
+              placeholder="email@example.com"
+            />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-label--container">
+            <label for="" class="input-label">Password</label>
+            <div>
+              <a class="login__forgot" href="/">Forgot</a>
+            </div>
+          </div>
+          <div class="input-container">
+            <input type="password" class="input" [formField]="loginForm.password" />
+            <img ngSrc="images/icon-show-password.svg" alt="show password" width="20" height="20" />
+          </div>
+        </div>
+
+        <input type="submit" value="Login" class="primary-button">
+      </form>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="login__google">
+      <div>
+        <h5>Or log in with:</h5>
+      </div>
+      <div>
+        <button class="outline-button">Google</button>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="login__signup">
+      <span>
+        Not account yet? <a href="">Sign up</a>
+      </span>
     </div>
   </div>
 </section>

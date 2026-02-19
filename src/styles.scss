@@ -37,12 +37,20 @@ h6 {
     @include text-preset-6;
 }
 
+.card-form {
+    @include card-form;
+}
+
 .input-group {
     @include input-group;
 }
 
 .input-label {
     @include input-label;
+}
+
+.input-container {
+    @include input-container;
 }
 
 .input {
@@ -55,4 +63,16 @@ h6 {
 
 .input-hint {
     @include input-hint;
+}
+
+.primary-button {
+    @include primary-button;
+}
+
+.outline-button {
+    @include outline-button;
+}
+
+div.divider {
+    @include divider;
 }
